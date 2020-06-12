@@ -16,9 +16,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Dockerfile = Dockerfile
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RYoshiga.Demo.SmokeTests", "RYoshiga.Demo.SmokeTests\RYoshiga.Demo.SmokeTests.csproj", "{9FBA7930-113A-4599-9426-30D4D9109B17}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2AD7AB54-70B2-496D-B65A-89FB9536577A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RYoshiga.Demo.Infrastructure", "RYoshiga.Demo.Infrastructure\RYoshiga.Demo.Infrastructure.csproj", "{E715303F-42DC-4D05-9CE4-59C31DBFDC8A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RYoshiga.Demo.AdapterTests", "RYoshiga.Demo.AdapterTests\RYoshiga.Demo.AdapterTests.csproj", "{C3C12B99-1D4F-4567-B20C-C211EDD5D15A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,10 +44,14 @@ Global
 		{5F589092-EA10-4F3D-A33B-40A9A5A652AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F589092-EA10-4F3D-A33B-40A9A5A652AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F589092-EA10-4F3D-A33B-40A9A5A652AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9FBA7930-113A-4599-9426-30D4D9109B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9FBA7930-113A-4599-9426-30D4D9109B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9FBA7930-113A-4599-9426-30D4D9109B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9FBA7930-113A-4599-9426-30D4D9109B17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E715303F-42DC-4D05-9CE4-59C31DBFDC8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E715303F-42DC-4D05-9CE4-59C31DBFDC8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E715303F-42DC-4D05-9CE4-59C31DBFDC8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E715303F-42DC-4D05-9CE4-59C31DBFDC8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3C12B99-1D4F-4567-B20C-C211EDD5D15A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C12B99-1D4F-4567-B20C-C211EDD5D15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C12B99-1D4F-4567-B20C-C211EDD5D15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C12B99-1D4F-4567-B20C-C211EDD5D15A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,7 +59,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{CC2D7632-1482-4D68-A8B6-E4E7A83CFAE8} = {2AD7AB54-70B2-496D-B65A-89FB9536577A}
 		{603BCE94-DDB9-4DDB-A8C3-98C09794A756} = {2AD7AB54-70B2-496D-B65A-89FB9536577A}
-		{9FBA7930-113A-4599-9426-30D4D9109B17} = {2AD7AB54-70B2-496D-B65A-89FB9536577A}
+		{C3C12B99-1D4F-4567-B20C-C211EDD5D15A} = {2AD7AB54-70B2-496D-B65A-89FB9536577A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E6485D89-122D-4AAB-AA97-09E72ACA552F}

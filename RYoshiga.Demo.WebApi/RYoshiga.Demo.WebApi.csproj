@@ -16,14 +16,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RYoshiga.Demo.Domain\RYoshiga.Demo.Domain.csproj" />
+    <ProjectReference Include="..\RYoshiga.Demo.Infrastructure\RYoshiga.Demo.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <WCFMetadata Include="Connected Services" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 
