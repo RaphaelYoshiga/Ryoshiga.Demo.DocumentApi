@@ -8,6 +8,7 @@ using RYoshiga.Demo.Domain.Adapters;
 
 namespace RYoshiga.Demo.WebApi.Controllers
 {
+    [Route("documents")]
     public class DocumentApiController : Controller
     {
         private readonly IFileSaver _fileSaver;
@@ -25,7 +26,7 @@ namespace RYoshiga.Demo.WebApi.Controllers
                 return BadRequest();
             }
 
-            await _fileSaver.Save(formFile.OpenReadStream());
+            await _fileSaver.Save(formFile.FileName, formFile.OpenReadStream());
             return Ok();
         }
     }

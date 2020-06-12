@@ -5,6 +5,6 @@ namespace RYoshiga.Demo.Domain.Adapters
 {
     public interface IFileSaver
     {
-        Task Save(Stream stream);
+        Task Save(string fileName, Stream stream);
     }
 }

@@ -21,20 +21,21 @@ namespace RYoshiga.Demo.AdapterTests
             _fileManager = new StorageAccountFileManager(storageAccountConfiguration);
         }
 
-        [Fact]
-        public async Task SaveFile()
+        [Theory]
+        [InlineData("test.pdf")]
+        [InlineData("another.pdf")]
+        public async Task SaveFile(string uploadFileName)
         {
             var testFilePath = Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "testFile.pdf");
 
-            await _fileManager.Save(File.OpenRead(testFilePath));
-            var readFile = await _fileManager.Read("test.pdf");
+            await _fileManager.Save(uploadFileName, File.OpenRead(testFilePath));
             
+            var readFile = await _fileManager.Read(uploadFileName);
             var actual = ReadFully(readFile);
             var expected = ReadFully(File.OpenRead(testFilePath));
             actual.ShouldBe(expected);
 
-            await _fileManager.Delete("test.pdf");
-
+            await _fileManager.Delete(uploadFileName);
         }
 
         public static byte[] ReadFully(Stream input)

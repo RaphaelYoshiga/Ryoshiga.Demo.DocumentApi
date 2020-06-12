@@ -57,7 +57,7 @@ namespace RYoshiga.Demo.Specs
         [Then(@"it is uploaded successfully")]
         public void ThenItIsUploadedSuccessfully()
         {
-            _fileSaverMock.Verify(p => p.Save(_expectedFileStream));
+            _fileSaverMock.Verify(p => p.Save(_formFileMock.Object.FileName, _expectedFileStream));
             _response.ShouldBeOfType<OkResult>();
         }
 

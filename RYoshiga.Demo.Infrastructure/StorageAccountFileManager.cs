@@ -28,10 +28,10 @@ namespace RYoshiga.Demo.Infrastructure
             return await _blobServiceClient.CreateBlobContainerAsync(BlobContainerName);
         }
 
-        public async Task Save(Stream stream)
+        public async Task Save(string fileName, Stream stream)
         {
             var container = await CreateContainerIfNotExists();
-            var blobClient = container.GetBlobClient("test.pdf");
+            var blobClient = container.GetBlobClient(fileName);
             await blobClient.UploadAsync(stream);
         }
 
