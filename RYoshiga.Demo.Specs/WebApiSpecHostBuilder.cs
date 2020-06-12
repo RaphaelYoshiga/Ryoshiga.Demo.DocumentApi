@@ -11,7 +11,6 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Moq;
 using RYoshiga.Demo.WebApi;
-using RYoshiga.Demo.WebApi.Controllers;
 
 namespace RYoshiga.Demo.Specs
 {
@@ -67,7 +66,6 @@ namespace RYoshiga.Demo.Specs
 
         private static void SetupControllers(IServiceCollection services)
         {
-            services.AddTransient<DeliveryOptionsController>();
         }
     }
 }

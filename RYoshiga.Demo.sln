@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RYoshiga.Demo.FunctionApp", "RYoshiga.Demo.FunctionApp\RYoshiga.Demo.FunctionApp.csproj", "{BA96FEC0-3181-4088-B7FF-AA17F72D56A5}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RYoshiga.Demo.WebApi", "RYoshiga.Demo.WebApi\RYoshiga.Demo.WebApi.csproj", "{CD79C225-1BE4-4330-81F9-5645314B88C3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RYoshiga.Demo.UnitTests", "RYoshiga.Demo.UnitTests\RYoshiga.Demo.UnitTests.csproj", "{CC2D7632-1482-4D68-A8B6-E4E7A83CFAE8}"
@@ -18,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Dockerfile = Dockerfile
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RYoshiga.Demo.SmokeTests", "RYoshiga.Demo.SmokeTests\RYoshiga.Demo.SmokeTests.csproj", "{9FBA7930-113A-4599-9426-30D4D9109B17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RYoshiga.Demo.SmokeTests", "RYoshiga.Demo.SmokeTests\RYoshiga.Demo.SmokeTests.csproj", "{9FBA7930-113A-4599-9426-30D4D9109B17}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2AD7AB54-70B2-496D-B65A-89FB9536577A}"
 EndProject
@@ -28,10 +26,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BA96FEC0-3181-4088-B7FF-AA17F72D56A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA96FEC0-3181-4088-B7FF-AA17F72D56A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA96FEC0-3181-4088-B7FF-AA17F72D56A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA96FEC0-3181-4088-B7FF-AA17F72D56A5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CD79C225-1BE4-4330-81F9-5645314B88C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CD79C225-1BE4-4330-81F9-5645314B88C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD79C225-1BE4-4330-81F9-5645314B88C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
